@@ -2,27 +2,41 @@
 	"name": "reg-collect",
 	"displayName": "ax-reg-collect",
 	"description": "正则收集",
-	"version": "0.0.1",
+	"version": "0.0.2",
+	"publisher": "llhe",
+	"icon": "./image/logo.jpg",
 	"engines": {
 		"vscode": "^1.51.0"
 	},
-	"categories": [
-		"Snippets"
-	],
-	"activationEvents": [
-		"onCommand:reg-collect.helloWorld"
-	],
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"categories": [ "Snippets" ],
+	"activationEvents": [ "onCommand:reg-collect.ax-reg" ],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "reg-collect.helloWorld",
-				"title": "Hello World"
+				"command": "reg-collect.ax-reg",
+				"title": "ax-reg"
 			}
 		],
 		"snippets": [
 			{
 				"language": "javascript",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "ts",
 				"path": "./snippets.json"
 			}
 		]
