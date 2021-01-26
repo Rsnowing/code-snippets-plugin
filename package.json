@@ -1,10 +1,10 @@
 {
 	"name": "reg-collect",
 	"displayName": "ax-reg-collect",
-	"description": "正则收集",
-	"version": "0.0.2",
+	"description": "正则提示",
+	"version": "0.0.3",
 	"publisher": "llhe",
-	"icon": "logo.jpg",
+	"icon": "logo.png",
 	"engines": {
 		"vscode": "^1.51.0"
 	},
@@ -13,13 +13,17 @@
 		"url": ""
 	},
 	"categories": [ "Snippets" ],
-	"activationEvents": [ "onCommand:reg-collect.ax-reg" ],
+	"activationEvents": [ "onCommand:reg-collect.ax-reg", "onCommand:reg-collect.ax-tips" ],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "reg-collect.ax-reg",
 				"title": "ax-reg"
+			},
+			{
+				"command": "reg-collect.ax-tips",
+				"title": "ax-tips"
 			}
 		],
 		"snippets": [
